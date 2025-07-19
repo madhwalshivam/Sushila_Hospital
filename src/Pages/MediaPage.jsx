@@ -1,12 +1,8 @@
 import React from "react";
-
-import media1 from "../Assets/media1.jpeg";
-import media2 from "../Assets/media2.jpeg";
 import media3 from "../Assets/media3.jpeg";
 import media4 from "../Assets/media4.jpeg";
 import media5 from "../Assets/media5.jpeg";
 import media6 from "../Assets/media6.jpeg";
-import media7 from "../Assets/media7.jpeg";
 import media8 from "../Assets/media11.jpg";
 import media9 from "../Assets/media10.jpeg";
 import Footer from "../Components/Footer";
