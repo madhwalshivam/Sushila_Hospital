@@ -26,7 +26,7 @@ and compassionate staff. From general consultations and diagnostics to specializ
 
         <InformationCard
           title="Cancer Department"
-          description="We offer comprehensive care to cancer patients, backed by state-of-the-art facilities that cover every stage of treatment—from early detection and diagnosis to advanced therapies and supportive care. Our cancer care services include preventive screenings, chemotherapy, radiation therapy, surgical oncology, and personalized treatment plans, all aimed at ensuring the best possible outcomes. With a team of experienced oncologists and modern medical technology, we are committed to delivering compassionate and effective cancer care.."
+          description="We offer comprehensive care to cancer patients, backed by state-of-the-art facilities that cover every stage of treatment—from early detection and diagnosis to advanced therapies and supportive care. Our cancer care services include preventive screenings, chemotherapy, radiation therapy, surgical oncology, and personalized treatment plans, all aimed at ensuring the best possible outcomes. With a team of experienced oncologists and modern medical technology, we are committed to delivering compassionate and effective cancer care."
           icon={faRibbon}
         />
 
