@@ -99,7 +99,7 @@ function Navbar() {
           </details>
 
           <Link to="/team" onClick={toggleNav} className="block">Our Doctors Team</Link>
-          <Link to="/media" onClick={toggleNav} className="block">Media</Link>
+          <Link to="/gallery" onClick={toggleNav} className="block">Gallery</Link>
           <Link to="/contact" onClick={toggleNav} className="block">Contact</Link>
 
           {/* Appointment Button */}
