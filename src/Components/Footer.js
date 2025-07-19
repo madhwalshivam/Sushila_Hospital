@@ -32,25 +32,27 @@ const Footer = () => {
           <ul className="space-y-2 text-gray-400">
             <li><Link to="/" className="hover:text-white">› Home</Link></li>
             <li><Link to="/about" className="hover:text-white">› About Us</Link></li>
-            <li><Link to="/services" className="hover:text-white">› Our Services</Link></li>
-            <li><Link to="/doctors" className="hover:text-white">› Meet Our Doctors</Link></li>
+            <li><Link to="/treatment" className="hover:text-white">› Treatments & Specialties</Link></li>
+             <li><Link to="/facilities" className="hover:text-white">› Facilities & Technology</Link></li>
+            <li><Link to="/team" className="hover:text-white">› Meet Our Doctors</Link></li>
             <li><Link to="/contact" className="hover:text-white">› Contact</Link></li>
           </ul>
         </div>
 
         {/* Departments */}
-        <div className="animate-fadeInUp delay-[300ms]">
-          <h4 className="text-lg font-semibold mb-4 text-white border-b-2 border-blue-500 inline-block">
-            Departments
-          </h4>
-          <ul className="space-y-2 text-gray-400">
-            <li><Link to="/cardiology" className="hover:text-white">› Cardiology</Link></li>
-            <li><Link to="/gynaecology" className="hover:text-white">› Gynaecology</Link></li>
-            <li><Link to="/orthopaedics" className="hover:text-white">› Orthopaedics</Link></li>
-            <li><Link to="/paediatrics" className="hover:text-white">› Paediatrics</Link></li>
-            <li><Link to="/icu" className="hover:text-white">› ICU & Emergency</Link></li>
-          </ul>
-        </div>
+<div className="animate-fadeInUp delay-[300ms]">
+  <h4 className="text-lg font-semibold mb-4 text-white border-b-2 border-blue-500 inline-block">
+    Departments
+  </h4>
+  <ul className="space-y-2 text-gray-400">
+    <li>› Cardiology</li>
+    <li>› Gynaecology</li>
+    <li>› Orthopaedics</li>
+    <li>› Paediatrics</li>
+    <li>› ICU & Emergency</li>
+  </ul>
+</div>
+
 
         {/* Contact Info */}
         <div className="animate-fadeInUp delay-[400ms]">
