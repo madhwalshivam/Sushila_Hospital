@@ -1,148 +1,113 @@
 import React from "react";
-import "../Styles/Footer.css";
-import SubscribeNewsletter from "./SubscribeNewsletter";
 import { Link } from "react-router-dom";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
-function Footer() {
+const Footer = () => {
   return (
-    <div className="footer-section">
-      <div className="footer-container">
-        <div className="ft-info">
-          <div className="ft-info-p1">
-            <p className="ft-title">
-              Health <span className="ft-sign">+</span>
-            </p>
-            <p className="ft-description">
-              Talk to online doctors and get medical advice, online
-              prescriptions, refills and medical notes within minutes. On-demand
-              healthcare services at your fingertips.
-            </p>
+    <footer className="bg-gray-900 text-gray-200 pt-16 pb-10 px-6 md:px-12 overflow-hidden">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        
+        <div className="lg:col-span-2 animate-fadeInUp delay-[100ms]">
+          <h4 className="text-xl font-bold mb-4 text-white border-b-2 border-blue-500 inline-block">
+            About Sushila Hospital
+          </h4>
+          <p className="text-gray-400 mb-6">
+            Sushila Hospital is a multi-specialty & trauma care center committed to delivering affordable, high-quality healthcare services with advanced technology and a human touch. Trusted since our inception, we continue to care with compassion.
+          </p>
+          <Link
+            to="/about"
+            className="inline-block border border-blue-500 text-white px-5 py-2 rounded-md hover:bg-blue-600 transition duration-300"
+          >
+            Read More About
+          </Link>
+        </div>
+
+        {/* Quick Links */}
+        <div className="animate-fadeInUp delay-[200ms]">
+          <h4 className="text-lg font-semibold mb-4 text-white border-b-2 border-blue-500 inline-block">
+            Quick Links
+          </h4>
+          <ul className="space-y-2 text-gray-400">
+            <li><Link to="/" className="hover:text-white">› Home</Link></li>
+            <li><Link to="/about" className="hover:text-white">› About Us</Link></li>
+            <li><Link to="/services" className="hover:text-white">› Our Services</Link></li>
+            <li><Link to="/doctors" className="hover:text-white">› Meet Our Doctors</Link></li>
+            <li><Link to="/contact" className="hover:text-white">› Contact</Link></li>
+          </ul>
+        </div>
+
+        {/* Departments */}
+        <div className="animate-fadeInUp delay-[300ms]">
+          <h4 className="text-lg font-semibold mb-4 text-white border-b-2 border-blue-500 inline-block">
+            Departments
+          </h4>
+          <ul className="space-y-2 text-gray-400">
+            <li><Link to="/cardiology" className="hover:text-white">› Cardiology</Link></li>
+            <li><Link to="/gynaecology" className="hover:text-white">› Gynaecology</Link></li>
+            <li><Link to="/orthopaedics" className="hover:text-white">› Orthopaedics</Link></li>
+            <li><Link to="/paediatrics" className="hover:text-white">› Paediatrics</Link></li>
+            <li><Link to="/icu" className="hover:text-white">› ICU & Emergency</Link></li>
+          </ul>
+        </div>
+
+        {/* Contact Info */}
+        <div className="animate-fadeInUp delay-[400ms]">
+          <h4 className="text-lg font-semibold mb-4 text-white border-b-2 border-blue-500 inline-block">
+            Get in Touch
+          </h4>
+          <p className="text-gray-400">
+            A-43, Patel Nagar 2,<br />
+           Near Metro Station, Ghaziabad U.P - 201001<br />
+            India
+          </p>
+          <p className="mt-3 text-blue-400 font-semibold">
+            Phone:<br />
+            <a href="tel:+919997000000" className="hover:underline">+91-9990785220</a>
+          </p>
+
+          <div className="flex gap-4 mt-4 text-gray-800">
+            <a
+              href="https://www.facebook.com/sushilahospital"
+              target="_blank"
+              rel="noreferrer"
+              className="w-9 h-9 flex items-center justify-center bg-white rounded-full hover:bg-blue-600 hover:text-white transition duration-300"
+            >
+              <FacebookIcon fontSize="small" />
+            </a>
+            <a
+              href="https://www.youtube.com/sushilahospital"
+              target="_blank"
+              rel="noreferrer"
+              className="w-9 h-9 flex items-center justify-center bg-white rounded-full hover:bg-red-600 hover:text-white transition duration-300"
+            >
+              <YouTubeIcon fontSize="small" />
+            </a>
+            <a
+              href="https://www.instagram.com/sushilahospital"
+              target="_blank"
+              rel="noreferrer"
+              className="w-9 h-9 flex items-center justify-center bg-white rounded-full hover:bg-pink-600 hover:text-white transition duration-300"
+            >
+              <InstagramIcon fontSize="small" />
+            </a>
           </div>
-
-          <SubscribeNewsletter />
-        </div>
-
-        <div className="ft-list">
-          <p className="ft-list-title">Services</p>
-          <ul className="ft-list-items">
-            <li>
-              <a href="#services">Emergency Care</a>
-            </li>
-            <li>
-              <a href="#services">Heart Disease</a>
-            </li>
-            <li>
-              <a href="#services">Dental Care</a>
-            </li>
-            <li>
-              <a href="#services">Prescription</a>
-            </li>
-            <li>
-              <a href="#services">Insights for doctors</a>
-            </li>
-          </ul>
-        </div>
-
-        <div className="ft-list">
-          <p className="ft-list-title">Legal</p>
-          <ul className="ft-list-items">
-            <li>
-              <Link to={"/legal"}>General Info</Link>
-            </li>
-            <li>
-              <Link to={"/legal"}>Privacy Policy</Link>
-            </li>
-            <li>
-              <Link to={"/legal"}>Terms of Services</Link>
-            </li>
-            <li>
-              <Link to={"/legal"}>Consultations</Link>
-            </li>
-            <li>
-              <Link to={"/legal"}>How it Works</Link>
-            </li>
-          </ul>
-        </div>
-
-        <div className="ft-list" id="contact">
-          <p className="ft-list-title">Talk To Us</p>
-          <ul className="ft-list-items">
-            <li>
-              <a href="mailto:support@healthplus.com">support@healthplus.com</a>
-            </li>
-            <li>
-              <a href="mailto:appointment@healthplus.com">
-                appointment@healthplus.com
-              </a>
-            </li>
-            <li>
-              <a href="tel:+022 5454 5252">+022 5454 5252</a>
-            </li>
-            <li>
-              <a href="tel:+022 2326 6232">+022 2326 6232</a>
-            </li>
-          </ul>
         </div>
       </div>
 
-      <div className="ft-copyright">
-        <p>© 2013-2023 Health+. All rights reserved.</p>
-
-        <ul className="ft-social-links">
-          <li>
-            <a
-              href="https://linkedin.com/in/Alkaison/"
-              title="LinkedIn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="1em"
-                viewBox="0 0 448 512"
-              >
-                <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
-              </svg>
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="https://facebook.com/"
-              title="FaceBook"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="1em"
-                viewBox="0 0 320 512"
-              >
-                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
-              </svg>
-            </a>
-          </li>
-
-          <li>
-            <a
-              href="https://x.com/Alkaison/"
-              title="Twitter"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="1em"
-                viewBox="0 0 512 512"
-              >
-                <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
-              </svg>
-            </a>
-          </li>
-        </ul>
+      {/* Bottom Footer Text */}
+      <div className="border-t border-gray-700 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 animate-fadeInUp delay-[500ms]">
+        <p>© 2025 Sushila Hospital. All Rights Reserved.</p>
+        <p>
+          Designed by{" "}
+          <Link to="/advertising-india" className="text-blue-400 hover:underline">
+            Advertising India
+          </Link>
+        </p>
       </div>
-    </div>
+    </footer>
   );
-}
+};
 
 export default Footer;

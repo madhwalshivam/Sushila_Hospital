@@ -1,5 +1,5 @@
 import React from "react";
-import Doctor from "../Assets/doctor-group.png";
+import Doctor from "../Assets/family.jpg";
 import SolutionStep from "./SolutionStep";
 import "../Styles/About.css";
 
@@ -15,28 +15,26 @@ function About() {
           <span>About Us</span>
         </h3>
         <p className="about-description">
-          Welcome to Health Plus, your trusted partner for accessible and
-          personalized healthcare. Our expert doctors offer online consultations
-          and specialized services, prioritizing your well-being. Join us on
-          this journey towards a healthier you.
+         Welcome to Sushila Hospital — your trusted multi-speciality healthcare partner. We offer expert medical care with a human touch, combining advanced technology and compassionate service at an affordable cost.
         </p>
 
-        <h4 className="about-text-title">Your Solutions</h4>
+       <h4 className="about-text-title">Our Facilities</h4>
 
-        <SolutionStep
-          title="Choose a Specialist"
-          description="Find your perfect specialist and book with ease at Health Plus. Expert doctors prioritize your health, offering tailored care."
-        />
+<SolutionStep
+  title="Advanced Critical Care"
+  description="Our ICU and Neonatal units are equipped with 18 beds, offering continuous monitoring and specialized care for adults and newborns."
+/>
 
-        <SolutionStep
-          title="Make a Schedule"
-          description="Choose the date and time that suits you best, and let our dedicated team of medical professionals ensure your well-being with personalized care."
-        />
+<SolutionStep
+  title="Emergency & Maternity Services"
+  description="Fully-equipped delivery suites and a dedicated emergency ward ensure timely care for urgent and maternity cases."
+/>
 
-        <SolutionStep
-          title="Get Your Solutions"
-          description="Our experienced doctors and specialists are here to provide expert advice and personalized treatment plans, helping you achieve your best possible health."
-        />
+<SolutionStep
+  title="Expert Surgical Facilities"
+  description="Three modern OTs and advanced C-Arm support complex procedures in Urology, Ortho, Pediatrics, Gastro, and Neurosurgery."
+/>
+
       </div>
     </div>
   );

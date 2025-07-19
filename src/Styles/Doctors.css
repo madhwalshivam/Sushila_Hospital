@@ -36,58 +36,83 @@
     line-height: 1.8rem;
 }
 /* Doctor Cards */
+/* Doctor Cards Container */
 .dt-cards-content {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
     justify-content: center;
-    align-items: center;
-    gap: 32px;
+    align-items: start;
+    padding: 16px 0;
 }
+
+/* Force 4 cards per row on large screens */
+@media screen and (min-width: 1300px) {
+    .dt-cards-content {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Doctor Card */
 .dt-card {
-    width: 332px;
+    width: 100%;
+    max-width: 332px;
     height: 400px;
-    gap: 32px;
     text-align: left;
     font-family: 'Rubik', sans-serif;
 }
+
+/* Doctor Image Section */
 .dt-card-img {
     width: 100%;
     height: 275px;
     padding: 16px 32px 0;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #DDE5F8;
     border-radius: 20px;
 }
+
+/* Doctor Name */
 .dt-card-name {
     margin: 12px 0 0 0;
     font-size: 22px;
     font-weight: bold;
-    letter-spacing: .7px;
+    letter-spacing: 0.7px;
 }
+
+/* Doctor Title (Specialization) */
 .dt-card-title {
     margin: 6px 0 8px;
     color: #494949;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    letter-spacing: .7px;
+    letter-spacing: 0.7px;
 }
+
+/* Star Ratings */
 .dt-card-stars {
     font-size: 18px;
     font-weight: bold;
-    letter-spacing: .7px;
+    letter-spacing: 0.7px;
 }
+
+/* Review Count */
 .dt-card-reviews {
     color: #5a5a5a;
     font-size: 18px;
     font-weight: bold;
-    letter-spacing: .7px;
+    letter-spacing: 0.7px;
 }
-/* Responsive */
+
+/* Responsive Text Adjustments */
 @media screen and (max-width: 700px) {
     .dt-title {
         font-size: 32px;
     }
+
     .dt-description {
         margin: 48px 0 0;
         font-size: 18px;
