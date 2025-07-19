@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import DoctorCard from "./DoctorCard";
 import profile1 from "../Assets/dr1.webp";
 import profile2 from "../Assets/dr2.webp";
 import profile3 from "../Assets/dr3.jpeg";
