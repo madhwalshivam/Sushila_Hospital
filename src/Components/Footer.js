@@ -45,12 +45,42 @@ const Footer = () => {
     Departments
   </h4>
   <ul className="space-y-2 text-gray-400">
-    <li>› Cardiology</li>
-    <li>› Gynaecology</li>
-    <li>› Orthopaedics</li>
-    <li>› Paediatrics</li>
-    <li>› ICU & Emergency</li>
-  </ul>
+  <li>
+    <Link to="/treatment" className="hover:text-white">
+      › Cardiology
+    </Link>
+  </li>
+  <li>
+    <Link to="/treatment" className="hover:text-white">
+      › Gynaecology
+    </Link>
+  </li>
+  <li>
+    <Link to="/treatment" className="hover:text-white">
+      › Orthopaedics
+    </Link>
+  </li>
+  <li>
+    <Link to="/treatment" className="hover:text-white">
+      › Paediatrics
+    </Link>
+  </li>
+  <li>
+    <Link to="/treatment" className="hover:text-white">
+      › ICU & Emergency
+    </Link>
+  </li>
+  <li>
+    <Link to="/treatment" className="hover:text-white">
+      › Internal Medicine
+    </Link>
+  </li>
+  <li>
+    <Link to="/treatment" className="hover:text-white">
+      › Pulmonary & Critical Care
+    </Link>
+  </li>
+</ul>
 </div>
 
 
@@ -59,11 +89,22 @@ const Footer = () => {
           <h4 className="text-lg font-semibold mb-4 text-white border-b-2 border-blue-500 inline-block">
             Get in Touch
           </h4>
-          <p className="text-gray-400">
-            A-43, Patel Nagar 2,<br />
-           Near Metro Station, Ghaziabad U.P - 201001<br />
-            India
-          </p>
+  <div className="text-gray-400">
+  <p>
+    Sushila Multispeciality Hospital,<br />
+    A-43, Patel Nagar 2, Chhabil Das Marg,<br />
+    Near Pelican Hotel, Ghaziabad, U.P - 201001
+  </p>
+  <a
+    href="https://www.google.com/maps?q=Sushila+Multispeciality+Hospital,+Block+A,+A-43,+Chhabil+Das+Marg,+near+Pelican+Hotel,+Pocket+D,+Patel+Nagar+2nd,+Patel+Nagar,+Ghaziabad,+Uttar+Pradesh+201001"
+    target="_blank"
+    rel="noreferrer"
+    className="text-blue-900 hover:text-blue-700  inline-block mt-1"
+  >
+    View on Google Maps →
+  </a>
+</div>
+
           <p className="mt-3 text-blue-400 font-semibold">
             Phone:<br />
             <a href="tel:+919997000000" className="hover:underline">+91-9990785220</a>
@@ -98,7 +139,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Footer Text */}
       <div className="border-t border-gray-700 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 animate-fadeInUp delay-[500ms]">
         <p>© 2025 Sushila Hospital. All Rights Reserved.</p>
         <p>

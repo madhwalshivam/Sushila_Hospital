@@ -16,6 +16,7 @@ const Contact = () => {
     "Wednesday",
     "Thursday",
     "Friday",
+    "Saturday",
     "Sunday",
   ];
 
@@ -107,11 +108,12 @@ const Contact = () => {
             </div>
             <ul className="space-y-2 border-t pt-2 border-white/30">
               {hours.map((day) => (
-                <li key={day} className="flex justify-between">
-                  <span>{day}</span>
-                  <span>8:00 - 17:00</span>
-                </li>
-              ))}
+  <li key={day} className="flex justify-between">
+    <span>{day}</span>
+    <span>Open 24/7</span>
+  </li>
+))}
+
             </ul>
 
             <Link to="/appointment">

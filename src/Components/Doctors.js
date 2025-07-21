@@ -24,28 +24,28 @@ function Doctors() {
   <DoctorCard
     img={profile1}
     name="Dr. Anupam Singh"
-    title="MBBS (MAMC) | MD (Medicine) - RIMS | ECFMG Certified (USA)"
+    title="MD"
     stars="4.9"
     reviews="1200"
   />
   <DoctorCard
     img={profile2}
     name="Dr. J Kumar"
-    title="DCH, MD (Pediatrics) – KIMS, Maharashtra | Boston (USA)"
+    title="MD"
     stars="4.8"
     reviews="1100"
   />
   <DoctorCard
     img={profile3}
     name="Dr. Komal Goel"
-    title="MBBS, MD, IDCCM, FCCS, CCEDM"
+    title="MD"
     stars="4.7"
     reviews="950"
   />
   <DoctorCard
     img={profile4}
-    name="Dr. Vimal kumar Agrawal"
-    title="MBBS (MAMC) | MD (Medicine)"
+    name="Dr. Anand kumar"
+    title="MD"
     stars="4.8"
     reviews="1000"
   />

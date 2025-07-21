@@ -9,25 +9,24 @@ import Footer from "../Components/Footer";
 
 const facilities = [
   {
-    title: "Cath Lab",
-    img: image1,
-    desc: "A catheterization laboratory, commonly referred to as a cath lab, is an examination room in a Sushila Hospital with diagnostic imaging equipment used to visualize the arteries of the heart and the chambers of the heart and treat any stenosis or abnormality found."
-  },
-  {
-  title: "24x7 Blood Bank",
-  img: image2,
-  desc: "Sushila Hospital provides round-the-clock blood bank services, ensuring the availability of safe, screened, and well-preserved blood and its components for emergency and planned procedures."
+  title: "Intensive Care Unit",
+  img: image1,
+  desc: "Sushila Hospital's Intensive Care Unit (ICU) is equipped with advanced life support systems and 24x7 monitoring to provide critical care to patients with life-threatening conditions."
 },
-
-  {
+{
+  title: "In-House Radiology Lab",
+  img: image2,
+  desc: "Our in-house radiology lab offers immediate access to diagnostic imaging such as X-rays, ultrasounds, CT scans, and MRIs, enabling quick and accurate diagnosis within the hospital premises."
+},
+ {
   title: "Deluxe Rooms",
   img: image3,
   desc: "Our Deluxe Rooms offer enhanced comfort with spacious layouts, electronic beds, personal refrigerators, and attached hygienic bathrooms—ensuring a private and peaceful recovery environment."
 },
  {
-  title: "100 Beds Hospital",
+  title: "60 Beds Hospital",
   img: image4,
-  desc: "Sushila Hospital has a capacity of 100 beds, including general wards and deluxe rooms. We provide comfortable, hygienic, and well-equipped spaces tailored to meet the needs and budget of every patient."
+  desc: "Sushila Hospital has a capacity of 60 beds, including general wards and deluxe rooms. We provide comfortable, hygienic, and well-equipped spaces tailored to meet the needs and budget of every patient."
 },
  {
   title: "Nursery (New Born)",

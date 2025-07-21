@@ -1,88 +1,59 @@
 import React, { useEffect, useState } from "react";
-import Doctor from "../Assets/dr.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarCheck, faAngleUp } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate  } from "react-router-dom";
-import "../Styles/Hero.css";
+import { Link } from "react-router-dom";
 
-function Hero() {
-  const navigate = useNavigate();
-  const [goUp, setGoUp] = useState(false);
+import banner1 from "../Assets/s.jpg";
+import banner2 from "../Assets/s1.jpg";
+import banner3 from "../Assets/s2.jpg";
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+import bannerMobile1 from "../Assets/sm-1.jpg";
+import bannerMobile2 from "../Assets/sm-1.jpg";
+import bannerMobile3 from "../Assets/sm-1.jpg";
 
-  const handleBookAppointmentClick = () => {
-    navigate("/appointment");
-  };
+const Hero = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const desktopBanners = [banner1, banner2, banner3];
+  const mobileBanners = [bannerMobile1, bannerMobile2, bannerMobile3];
 
   useEffect(() => {
-    const onPageScroll = () => {
-      if (window.scrollY > 600) {
-        setGoUp(true);
-      } else {
-        setGoUp(false);
-      }
-    };
-    window.addEventListener("scroll", onPageScroll);
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("scroll", onPageScroll);
-    };
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === 2 ? 0 : prevIndex + 1
+      );
+    }, 3000); // Slide every 3 seconds
+
+    return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="section-container">
-      <div className="hero-section">
-        <div className="text-section">
-          <p className="text-headline">❤️Your Health,Our Priority</p>
-          <h2 className="text-title">
-           Consult Experienced Doctors at Sushila Hospital
-          </h2>
-          <p className="text-descritpion">
-  Sushila Hospital offers trusted, affordable care with expert doctors and 24x7 support —<span className="font-bold text-blue-900">we also accept Ayushman card</span>.
-</p>
+    <div className="w-full pt-24 relative">
+      <Link to="/contact">
+        <img
+          src={isMobile ? mobileBanners[currentIndex] : desktopBanners[currentIndex]}
+          alt="Banner"
+          className={`w-full ${isMobile ? "h-auto object-contain" : "h-screen object-cover object-top"} transition-all duration-700`}
+        />
+      </Link>
 
-
-          <button
-            className="text-appointment-btn"
-            type="button"
-            onClick={handleBookAppointmentClick}
-          >
-            <FontAwesomeIcon icon={faCalendarCheck} /> Book Appointment
-          </button>
-          <div className="text-stats">
-            <div className="text-stats-container">
-              <p>1150+</p>
-              <p>Receive Patients</p>
-            </div>
-
-            <div className="text-stats-container">
-              <p>183+</p>
-              <p>Expert Doctors</p>
-            </div>
-
-            <div className="text-stats-container">
-              <p>40+</p>
-              <p>Years of Experience</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="hero-image-section">
-          <img className="hero-image1" src={Doctor} alt="Doctor" />
-        </div>
-      </div>
-
-      <div
-        onClick={scrollToTop}
-        className={`scroll-up ${goUp ? "show-scroll" : ""}`}
-      >
-        <FontAwesomeIcon icon={faAngleUp} />
+      {/* Dots */}
+      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex gap-2">
+        {desktopBanners.map((_, index) => (
+          <div
+            key={index}
+            className={`w-3 h-3 rounded-full ${index === currentIndex ? "bg-blue-600" : "bg-gray-300"}`}
+          />
+        ))}
       </div>
     </div>
   );
-}
+};
 
 export default Hero;

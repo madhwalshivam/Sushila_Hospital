@@ -31,12 +31,18 @@ const departments = [
     icon: <FaHospitalUser />,
   },
   {
+  title: "Neurosurgery",
+  desc: "Advanced surgical care for brain and spinal disorders including tumors, trauma, hydrocephalus, aneurysms, and minimally invasive spine surgeries by experienced neurosurgeons.",
+  icon: <FaBrain />,
+},
+
+  {
     title: "Pediatrics",
     desc: "Comprehensive healthcare for newborns, children, and teenagers, including vaccinations, growth tracking, nutrition, infections, and childhood illness management by pediatric experts.",
     icon: <FaChild />,
   },
   {
-    title: "Respiratory and Critical Care Medicine",
+    title: "Pulmonary & Critical Care",
     desc: "Specialized treatment for lung and chest conditions like asthma, COPD, and pneumonia, along with intensive care support such as mechanical ventilation and 24/7 ICU monitoring.",
     icon: <FaLungs />,
   },

@@ -2,139 +2,158 @@ import React, { useState } from "react";
 import profile1 from "../Assets/dr1.webp";
 import profile2 from "../Assets/dr2.webp";
 import profile3 from "../Assets/dr3.jpeg";
-import profile4 from "../Assets/dr4.jpg";
-import profile5 from "../Assets/dr5.jpeg";
-import profile6 from "../Assets/dr6.jpeg";
-import profile7 from "../Assets/dr8.jpg";
-import profile8 from "../Assets/dr9.jpg";
-import profile9 from "../Assets/dr10.jpeg";
-import profile10 from "../Assets/dr11.jpg";
-import profile11 from "../Assets/dr12.jpeg";
-import profile12 from "../Assets/dr13.jpeg";
-import profile13 from "../Assets/dr14.jpeg";
-import profile14 from "../Assets/dr15.jpg";
-import profile15 from "../Assets/dr16.jpg";
-import profile16 from "../Assets/dr17.jpg";
-import profile17 from "../Assets/dr17.png";
+
 import Footer from "./Footer";
 const doctors = [
   {
     img: profile1,
-    name: "Dr. Anupam K Singh",
-    title: "MBBS (MAMC) | MD (Medicine) - RIMS | ECFMG Certified (USA)",
-    stars: "4.9",
-    reviews: "1200",
-    description: `Consultant Physician & Head of Department (Medicine)
-Expertise: Metabolic Diseases, Diabetes, Cardiology, Infectious Diseases
-Experience: Ex-Associate Prof at Santosh Medical College, 55 research papers
-Awards: ERS Young Scientist Award 2008, HIV CME Best Paper 2013`
+    name: "Dr. Anupam Singh, MD",
+    description: "Senior physician specializing in internal medicine and metabolic disorders."
   },
   {
-    img: profile2,
-    name: "Dr. J Kumar",
-    title: "DCH, MD (Pediatrics) – KIMS | PGPN Boston (USA)",
-    stars: "4.8",
-    reviews: "1100",
-    description: `Senior Consultant Pediatrics with 17+ years of experience
-Services: Vaccination, Growth Evaluation, Asthma, Obesity Management
-Focus: Preventive care and adolescent health`
+    name: "Dr. Aman Mathur, MD",
+    description: "Expert in chronic disease management and preventive care."
   },
   {
-    img: profile3,
-    name: "Dr. Komal Goel",
-    title: "MBBS, MD, IDCCM, FCCS, CCEDM",
-    stars: "4.7",
-    reviews: "950",
-    description: `Intensive Care Physician with 10+ years of experience
-Skills: Ventilator management, Critical care, Tracheostomy, ICU Protocols`
+    name: "Dr. Neeshu Singh, MD",
+    description: "Focuses on lifestyle-related diseases and evidence-based internal medicine."
   },
   {
-    img: profile4,
-    name: "Dr. Vimal Kumar Agrawal",
-    title: "MBBS (MAMC) | MD (Medicine)",
-    stars: "4.8",
-    reviews: "1000",
-    description: `Internal Medicine Specialist with special interest in chronic illness, diabetes care and advanced diagnostics.`
+    name: "Dr. Vinesh Kumar",
+    description: "Experienced general practitioner with a holistic approach to care."
   },
   {
-    img: profile5,
-    name: "Dr. Neeshu Singh",
-    title: "MBBS (MAMC) | MD (Medicine) - RIMS | ECFMG Certified (USA)",
-    description: `Experienced physician focused on infectious diseases and lifestyle medicine. Known for a patient-first approach.`
+     img: profile2,
+    name: "Dr. J. Kumar, MD",
+    description: "Senior pediatrician with extensive experience in child health and development."
   },
   {
-    img: profile6,
-    name: "Dr. Omkar Singh",
-    title: "MBBS (MAMC) | MD (Medicine) - RIMS | ECFMG Certified (USA)",
-    description: `Physician with expertise in cardiometabolic health and preventive medicine.`
+    name: "Dr. Anand Kumar, MD",
+    description: "Internal medicine specialist with focus on diabetes and hypertension."
   },
   {
-    img: profile7,
-    name: "Dr. Naved Akhter",
-    title: "MBBS (MAMC) | MD (Medicine) - RIMS | ECFMG Certified (USA)",
-    description: `Senior Consultant with a strong academic background and research in endocrinology.`
+    name: "Dr. Vishrut Singh, MD",
+    description: "Physician with interest in cardiac care and infectious disease."
   },
   {
-    img: profile8,
-    name: "Dr. Gaurav Shrivastav",
-    title: "MBBS (MAMC) | MD (Medicine) - RIMS | ECFMG Certified (USA)",
-    description: `Physician known for thorough diagnosis and compassionate patient communication.`
+    name: "Dr. Shubhra Jaiswal, MD",
+    description: "Dedicated to women's health and autoimmune disease treatment."
   },
   {
-    img: profile9,
-    name: "Dr. Farha Khan",
-    title: "MBBS (MAMC) | MD (Medicine) - RIMS | ECFMG Certified (USA)",
-    description: `Internal Medicine specialist focused on women’s health, PCOS, and preventive cardiology.`
+    name: "Dr. Shweta, DGO",
+    description: "Obstetrician and gynecologist with expertise in prenatal and reproductive care."
   },
   {
-    img: profile10,
-    name: "Dr. Deepak Chahar",
-    title: "MBBS (MAMC) | MD (Medicine) - RIMS | ECFMG Certified (USA)",
-    description: `Expert in geriatric care and chronic disease management. Passionate about community health.`
+    name: "Dr. D.D. Verma, MS",
+    description: "Renowned surgeon specializing in general and laparoscopic procedures."
   },
   {
-    img: profile11,
-    name: "Dr. Ashish Kumar Shah",
-    title: "MBBS (MAMC) | MD (Medicine) - RIMS | ECFMG Certified (USA)",
-    description: `Strong background in cardiology, with interest in non-invasive diagnostics and health education.`
+     img: profile3,
+    name: "Dr. Komal Goel, MD",
+    description: "Critical care physician with expertise in ICU and emergency response."
   },
   {
-    img: profile12,
-    name: "Dr. Priyanka Bhadauria",
-    title: "MBBS (MAMC) | MD (Medicine) - RIMS | ECFMG Certified (USA)",
-    description: `Expertise in autoimmune and hormonal disorders. Committed to evidence-based care.`
+    name: "Dr. Sandeep, MD",
+    description: "Physician known for patient-centered care and diagnostics."
   },
   {
-    img: profile13,
-    name: "Dr. Abhishek Jain",
-    title: "MBBS (MAMC) | MD (Medicine) - RIMS | ECFMG Certified (USA)",
-    description: `Broad internal medicine experience including metabolic disorders, infections and tropical medicine.`
+    name: "Dr. Siddharth Anand, MD",
+    description: "Experienced in managing lifestyle diseases and geriatric care."
   },
   {
-    img: profile14,
-    name: "Dr. Aditya Gore",
-    title: "MBBS (MAMC) | MD (Medicine) - RIMS | ECFMG Certified (USA)",
-    description: `Experienced internist known for precision diagnostics and integrative treatment plans.`
+    name: "Dr. Milind Gautam, MS",
+    description: "Surgeon focused on minimally invasive surgical techniques."
   },
   {
-    img: profile15,
-    name: "Dr. Yogendra Kumar",
-    title: "MBBS (MAMC) | MD (Medicine) - RIMS | ECFMG Certified (USA)",
-    description: `Focuses on patient education and chronic care pathways in internal medicine.`
+    name: "Dr. Abhay Singhal, MS",
+    description: "General surgeon with special interest in trauma and critical care."
   },
   {
-    img: profile16,
-    name: "Dr. Pavitra Dosaj",
-    title: "MBBS (MAMC) | MD (Medicine) - RIMS | ECFMG Certified (USA)",
-    description: `Compassionate clinician focused on diabetes, hypertension, and women’s health.`
+    name: "Dr. Apoorv Goel, MS",
+    description: "Experienced in gastrointestinal and hepatobiliary surgeries."
   },
   {
-    img: profile17,
-    name: "Dr. Rajeev Kumar",
-    title: "MBBS (MAMC) | MD (Medicine) - RIMS | ECFMG Certified (USA)",
-    description: `Trusted physician with deep experience in both hospital-based and outpatient care.`
+    name: "Dr. B.K Jain, MS",
+    description: "Veteran surgeon with decades of experience in operative care."
+  },
+  {
+    name: "Dr. Uday Pratap Singh, MS",
+    description: "Specialist in urology and endoscopic surgical procedures."
+  },
+  {
+    name: "Dr. Shruti Patel, MS, MCH",
+    description: "Super-specialist in surgical oncology with focus on women’s cancers."
+  },
+  {
+    name: "Dr. Sanjay Mishra, MS, MCH",
+    description: "Highly experienced neurosurgeon and spine surgery expert."
+  },
+  {
+    name: "Dr. P. Kasarwani, MS, MCH",
+    description: "Cardiothoracic surgeon known for precision and innovation."
+  },
+  {
+    name: "Dr. Ritesh, MS, MCH",
+    description: "Plastic and reconstructive surgery expert with aesthetic specialization."
+  },
+  {
+    name: "Dr. Anshul Garg, MS",
+    description: "Surgeon with specialization in hernia, thyroid, and general procedures."
+  },
+  {
+    name: "Dr. Lalit Varma, MS",
+    description: "General and vascular surgeon focused on diabetic limb care."
+  },
+  {
+    name: "Dr. Rakesh Kumar, MD, DM",
+    description: "Super-specialist in neurology with extensive research in epilepsy and stroke."
+  },
+  {
+    name: "Dr. Amit Malik, MS, MCH",
+    description: "Orthopedic surgeon with focus on joint replacement and trauma care."
+  },
+  {
+    name: "Dr. Gajendra Singh, MS, MCH",
+    description: "Pediatric surgeon with a compassionate approach to child surgical care."
+  },
+  {
+    name: "Dr. Dhaval, MS, MCH",
+    description: "Plastic and maxillofacial surgery expert with cosmetic specialization."
+  },
+  {
+    name: "Dr. Hemendra Jha, MS",
+    description: "Skilled in abdominal surgeries and laparoscopic procedures."
+  },
+  {
+    name: "Dr. Rashi Agrawal, MD, DM",
+    description: "Endocrinologist specializing in thyroid, diabetes, and hormonal disorders."
+  },
+  {
+    name: "Dr. Jalaj Bakashi, MS, MCH",
+    description: "Urologist known for advanced kidney and bladder surgery."
+  },
+  {
+    name: "Dr. Nitin Manglik, MD, DM",
+    description: "Senior cardiologist with experience in interventional and non-invasive cardiology."
+  },
+  {
+    name: "Dr. Sharib, MDS",
+    description: "Dental surgeon with expertise in prosthodontics and smile design."
+  },
+  {
+    name: "Dr. Faizan Khan, MPT",
+    description: "Physiotherapist focusing on rehabilitation, ortho, and sports injuries."
+  },
+  {
+    name: "Dr. Navneet Dev, MD",
+    description: "Specialist in internal medicine with focus on diagnostics and primary care."
+  },
+  {
+    name: "Dr. Ankul Gupta, MD, DM",
+    description: "Oncologist dedicated to personalized cancer treatment and research."
   }
 ];
+
 
 
 function Doctors1() {
@@ -153,22 +172,25 @@ function Doctors1() {
      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 place-items-center">
 
         {doctors.map((doc, index) => (
-          <div
-            key={index}
-            className="w-full max-w-[280px] bg-white border border-gray-200 rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 cursor-pointer text-center"
-            onClick={() => doc.description && setSelectedDoctor(doc)}
-          >
-            <img
-              src={doc.img || profile1}
-              alt={doc.name}
-              className="w-28 h-28 object-cover rounded-full mx-auto mt-6 border border-gray-300"
-            />
-            <div className="p-4">
-              <h4 className="text-base font-semibold text-black">{doc.name}</h4>
-              <p className="text-gray-600 text-sm mt-1">{doc.title}</p>
-              {doc.description && (
-                <p className="mt-3 text-blue-900 font-medium text-sm underline">Read More</p>
-              )}
+  <div
+    key={index}
+    className="w-full max-w-[280px] bg-white border border-gray-200 rounded-xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 cursor-pointer text-center"
+    onClick={() => doc.description && setSelectedDoctor(doc)}
+  >
+    {doc.img ? (
+      <img
+        src={doc.img}
+        alt={doc.name}
+        className="w-28 h-28 object-cover rounded-full mx-auto mt-6 border border-gray-300"
+      />
+    ) : (
+      <div className="w-28 h-28 rounded-full mx-auto mt-6 border border-gray-300 bg-gray-100" />
+    )}
+    <div className="p-4">
+      <h4 className="text-base font-semibold text-black">{doc.name}</h4>
+      {doc.description && (
+        <p className="mt-3 text-blue-900 font-medium text-sm underline">Read More</p>
+      )}
             </div>
           </div>
         ))}
