@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import banner1 from "../Assets/s.jpg";
-import banner2 from "../Assets/s1.jpg";
-import banner3 from "../Assets/s2.jpg";
+import banner2 from "../Assets/s2.jpg";
+import banner3 from "../Assets/modi1.jpg";
 
 import bannerMobile1 from "../Assets/sm-1.jpg";
-import bannerMobile2 from "../Assets/sm-1.jpg";
-import bannerMobile3 from "../Assets/sm-1.jpg";
+import bannerMobile2 from "../Assets/sm-2.jpg";
+import bannerMobile3 from "../Assets/sm-3.jpg";
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
