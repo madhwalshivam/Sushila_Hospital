@@ -31,7 +31,8 @@ const doctors = [
   {
     img: profile5,
     name: "Dr. Aman Mathur, MD",
-    description: "Expert in chronic disease management and preventive care."
+    description: "Dr. Aman Mathur is a highly accomplished and respected Internist currently practicing at Sushila Hospital, one of the most trusted and advanced healthcare institutions in Delhi NCR. With over 15 years of extensive clinical experience, Dr. Mathur has built a reputation as one of the best Internal Medicine specialists in Delhi NCR. His deep commitment to patient care, accurate diagnosis, and long-term disease management has earned him both professional recognition and the trust of countless patients.Specializing in the comprehensive management of chronic illnesses such as diabetes, hypertension, cardiovascular disorders, thyroid dysfunction, infectious diseases, and autoimmune conditions, Dr. Mathur is known for his evidence-based and individualized approach to treatment. He stays at the forefront of advancements in internal medicine by continuously updating his knowledge through national and international medical forums."
+
   },
   {
     img: profile6,
