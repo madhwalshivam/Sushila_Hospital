@@ -12,27 +12,26 @@ function Info() {
           <span>What We Do</span>
         </h3>
         <p className="info-description">
-"Sushila Hospital brings quality healthcare closer to you, offering a wide range of medical services backed by experienced doctors, modern infrastructure, 
-and compassionate staff. From general consultations and diagnostics to specialized treatments and emergency care, we are committed to delivering patient-centric services with excellence. With our focus on affordability, trust, and timely care, your health is always our priority. We also accept Ayushman Bharat and other government health schemes for your convenience."
+"Sushila Hospital brings quality healthcare closer to you, offering a comprehensive range of medical services supported by highly experienced doctors, modern infrastructure, and a compassionate staff. From general consultations and diagnostics to specialized treatments and emergency care, we are committed to delivering patient-centric services with excellence.Recognized as one of the best hospitals in Delhi, Sushila Hospital focuses on affordability, trust, and timely medical attention. "
         </p>
       </div>
 
       <div className="info-cards-content">
         <InformationCard
           title="Orthopedics"
-          description="The Department of Orthopaedics is equipped with advanced, state-of-the-art infrastructure, providing comprehensive care for a wide range of bone and joint conditions. It specializes in procedures like joint replacement surgeries (such as knee and hip replacements), spinal surgeries, and treatment of fractures, sports injuries, arthritis, and other musculoskeletal disorders. The department uses modern surgical techniques and rehabilitation facilities to ensure faster recovery and better outcomes for patients."
+          description="The Department of Orthopaedics at Sushila Hospital is equipped with advanced infrastructure to provide comprehensive care for bone and joint conditions. Specializing in joint replacements (knee and hip), spinal surgeries, fracture management, sports injuries, and arthritis, our team uses modern surgical techniques and personalized rehabilitation to ensure faster recovery. Trusted for delivering excellent outcomes, we are recognized among the best orthopedic centers in Delhi."
           icon={ faBone}
         />
 
         <InformationCard
           title="Cancer Department"
-          description="We offer comprehensive care to cancer patients, backed by state-of-the-art facilities that cover every stage of treatment—from early detection and diagnosis to advanced therapies and supportive care. Our cancer care services include preventive screenings, chemotherapy, radiation therapy, surgical oncology, and personalized treatment plans, all aimed at ensuring the best possible outcomes. With a team of experienced oncologists and modern medical technology, we are committed to delivering compassionate and effective cancer care."
+          description="At Sushila Hospital, we provide comprehensive cancer care in Delhi NCR, offering support through every stage of the journey—from early detection to advanced treatment and post-care recovery. Our state-of-the-art cancer department is equipped with modern technology and skilled professionals dedicated to achieving the best outcomes for our patients.With timely interventions, modern techniques, and a patient-first mindset, Sushila Hospital is recognized as one of the best hospitals for cancer treatment in Delhi."
           icon={faRibbon}
         />
 
         <InformationCard
           title="Physician"
-          description="Our general physicians are highly qualified medical professionals who offer expert diagnosis and treatment for a wide range of common and chronic illnesses. With years of clinical experience, they focus on understanding each patient’s unique medical history and symptoms to provide accurate and effective care. Along with medical expertise, they are committed to delivering compassionate, patient-centered care, ensuring that each patient feels heard, supported, and well-treated throughout their healthcare journey."
+          description="Sushila Hospital’s General Medicine Department is led by experienced physicians who provide accurate diagnosis and treatment for a wide range of acute and chronic illnesses. With a focus on personalized, patient-centered care, our doctors ensure every patient receives the attention and support they need. Recognized for their expertise and compassion, they are counted among the best general physicians in Delhi, delivering trusted primary care for all age groups."
           icon={faUserDoctor}
         />
       </div>

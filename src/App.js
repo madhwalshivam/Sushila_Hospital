@@ -13,28 +13,32 @@ import Doctors1 from "./Components/Doctors1";
 import FacilitiesPage from "./Pages/FacilitiesPage";
 import ScrollToTop from "./Components/ScrollToTop"; 
 import Departments from "./Pages/Departments";
+import { HelmetProvider } from "react-helmet-async";
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <ScrollToTop /> {/* Scroll handler here */}
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/gallery" element={<MediaPage />} />
-          <Route path="/team" element={<Doctors1 />} />
-          <Route path="/facilities" element={<FacilitiesPage />} />
-          <Route path="/treatment" element={<Departments/>} />
-          <Route path="/legal" element={<Legal />} />
-          <Route path="/appointment" element={<Appointment />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Router>
-    </div>
+    <HelmetProvider>
+      <div className="App">
+        <Router>
+          <ScrollToTop /> 
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/gallery" element={<MediaPage />} />
+            <Route path="/team" element={<Doctors1 />} />
+            <Route path="/facilities" element={<FacilitiesPage />} />
+            <Route path="/treatment" element={<Departments />} />
+            <Route path="/legal" element={<Legal />} />
+            <Route path="/appointment" element={<Appointment />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Router>
+      </div>
+    </HelmetProvider>
   );
 }
 
 export default App;
+

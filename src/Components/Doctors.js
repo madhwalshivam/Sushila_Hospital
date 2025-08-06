@@ -3,7 +3,7 @@ import DoctorCard from "./DoctorCard";
 import profile1 from "../Assets/dr1.png";
 import profile2 from "../Assets/dr3.png";
 import profile3 from "../Assets/dr4.png";
-import profile4 from "../Assets/dr5.png";
+import profile4 from "../Assets/dr12.png";
 import { Link } from "react-router-dom";
 import "../Styles/Doctors.css";
 
@@ -44,7 +44,7 @@ function Doctors() {
   />
   <DoctorCard
     img={profile4}
-    name="Dr. Anand kumar"
+    name="Dr. Siddharth Anand"
     title="MD"
     stars="4.8"
     reviews="1000"

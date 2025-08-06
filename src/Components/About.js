@@ -15,7 +15,7 @@ function About() {
           <span>About Us</span>
         </h3>
         <p className="about-description">
-         Welcome to Sushila Hospital — your trusted multi-speciality healthcare partner. We offer expert medical care with a human touch, combining advanced technology and compassionate service at an affordable cost.
+        Welcome to Sushila Hospital — your trusted multi-speciality hospital in Delhi NCR. We provide expert medical care with a human touch, combining advanced technology, experienced doctors, and compassionate service. Committed to affordable healthcare in Delhi, Sushila Hospital ensures quality treatment and patient satisfaction across every department.
         </p>
 
        <h4 className="about-text-title">Our Facilities</h4>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
+import { Helmet } from "react-helmet-async";
 import "react-toastify/dist/ReactToastify.css";
 import Footer from "./Footer";
 
@@ -72,12 +73,24 @@ function AppointmentForm() {
 
   return (
     <div className="min-h-screen pt-32 bg-gray-50 flex flex-col justify-between">
+      {/* Helmet SEO */}
+      <Helmet>
+        <title>Book Appointment | Sushila Multispeciality Hospital | Best Hospital in Ghaziabad</title>
+        <meta
+          name="description"
+          content="Book an appointment online with Sushila Multispeciality Hospital for quality healthcare services. Choose your preferred time and consultation mode."
+        />
+        <meta
+          name="keywords"
+          content="Sushila Hospital appointment, book online doctor, hospital consultation, Ghaziabad hospital, multispeciality clinic"
+        />
+        <link rel="canonical" href="https://www.sushilahospital.com/appointment" />
+      </Helmet>
 
+      {/* Header */}
       <header className="bg-white shadow p-6">
         <h1 className="text-3xl font-bold text-blue-900 text-center">
-          <Link to="/">
-            Sushila Multispeciality Hospital
-          </Link>
+          <Link to="/">Sushila Multispeciality Hospital</Link>
         </h1>
       </header>
 
@@ -153,10 +166,9 @@ function AppointmentForm() {
                 className="w-full border rounded px-4 py-2 outline-none focus:ring-2 focus:ring-blue-900"
               >
                 <option value="default">Select</option>
-<option value="voice">Voice Call</option>
-<option value="video">Video Call</option>
-<option value="physical">Physical Visit</option>
-
+                <option value="voice">Voice Call</option>
+                <option value="video">Video Call</option>
+                <option value="physical">Physical Visit</option>
               </select>
               {formErrors.preferredMode && (
                 <p className="text-sm text-red-600 mt-1">{formErrors.preferredMode}</p>
@@ -179,8 +191,7 @@ function AppointmentForm() {
         </div>
       </main>
 
-      <Footer/>
-
+      <Footer />
       <ToastContainer autoClose={5000} limit={1} closeButton={false} />
     </div>
   );

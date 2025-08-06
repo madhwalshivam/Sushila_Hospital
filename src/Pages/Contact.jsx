@@ -7,6 +7,7 @@ import {
   FaClock,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Footer from "../Components/Footer";
 
 const Contact = () => {
@@ -22,12 +23,53 @@ const Contact = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
+      {/* SEO Helmet */}
+      <Helmet>
+        <title>Contact Us | Sushila Hospital Patel Nagar | Best Hospital in Delhi NCR</title>
+        <meta
+          name="description"
+          content="Get in touch with Sushila Multispeciality Hospital, Ghaziabad. Find contact numbers, email, hospital address, and book your appointments online. We're available 24/7."
+        />
+        <meta
+          name="keywords"
+          content="Sushila Hospital contact, Ghaziabad hospital phone number, book appointment, hospital email, hospital location"
+        />
+        <link rel="canonical" href="https://www.sushilahospital.com/contact" />
+        <meta name="author" content="Sushila Multispeciality Hospital" />
+
+        {/* Open Graph (Facebook) */}
+        <meta property="og:title" content="Contact Us | Sushila Hospital" />
+        <meta
+          property="og:description"
+          content="Reach out to Sushila Hospital for any queries or appointments. We're located near Patel Nagar Metro, Ghaziabad and open 24/7."
+        />
+        <meta
+          property="og:url"
+          content="https://www.sushilahospital.com/contact"
+        />
+        <meta
+          property="og:image"
+          content="https://www.sushilahospital.com/static/contact-cover.jpg"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Sushila Hospital" />
+        <meta
+          name="twitter:description"
+          content="Have questions or need help? Contact Sushila Multispeciality Hospital Ghaziabad. We're available round the clock to assist you."
+        />
+      </Helmet>
+
       {/* Main Content */}
       <main className="flex-grow pt-32 pb-12 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
           {/* SEND A MESSAGE FORM */}
           <div className="bg-white p-6 rounded-xl shadow-md">
-            <h2 className="text-xl font-bold mb-6 border-b pb-2">SEND A MESSAGE</h2>
+            <h2 className="text-xl font-bold mb-6 border-b pb-2">
+              SEND A MESSAGE
+            </h2>
             <form className="space-y-4">
               <div className="flex items-center border rounded px-3 py-2">
                 <FaUser className="text-gray-500 mr-3" />
@@ -84,18 +126,24 @@ const Contact = () => {
               </p>
               <p className="text-sm">
                 Email:{" "}
-                <span className="font-semibold">hospitalshushila@gmail.com</span>
+                <span className="font-semibold">
+                  hospitalshushila@gmail.com
+                </span>
               </p>
             </div>
 
-            <h3 className="font-semibold text-gray-700 mt-4 mb-2">CUSTOMER CARE</h3>
+            <h3 className="font-semibold text-gray-700 mt-4 mb-2">
+              CUSTOMER CARE
+            </h3>
             <div>
               <p className="text-sm">
                 Call Us: <span className="font-semibold">0120 4448294</span>
               </p>
               <p className="text-sm">
                 Email:{" "}
-                <span className="font-semibold">hospitalshushila@gmail.com</span>
+                <span className="font-semibold">
+                  hospitalshushila@gmail.com
+                </span>
               </p>
             </div>
           </div>
@@ -108,14 +156,12 @@ const Contact = () => {
             </div>
             <ul className="space-y-2 border-t pt-2 border-white/30">
               {hours.map((day) => (
-  <li key={day} className="flex justify-between">
-    <span>{day}</span>
-    <span>Open 24/7</span>
-  </li>
-))}
-
+                <li key={day} className="flex justify-between">
+                  <span>{day}</span>
+                  <span>Open 24/7</span>
+                </li>
+              ))}
             </ul>
-
             <Link to="/appointment">
               <button className="w-full mt-6 border border-white rounded py-2 hover:bg-white hover:text-blue-900 transition">
                 BOOK APPOINTMENTS
@@ -125,7 +171,7 @@ const Contact = () => {
         </div>
       </main>
 
-      {/* Full-Width Google Map */}
+      {/* Google Map Embed */}
       <div className="w-full mt-10">
         <iframe
           title="Sushila Multispeciality Hospital Location"

@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import media3 from "../Assets/media3.jpeg";
 import media4 from "../Assets/media4.jpeg";
 import media5 from "../Assets/media5.jpeg";
@@ -7,18 +8,31 @@ import media8 from "../Assets/media11.jpg";
 import media9 from "../Assets/media10.jpeg";
 import Footer from "../Components/Footer";
 
-const mediaImages = [
-  media3,
-  media4,
-  media5,
-  media6,
-  media9,
-  media8,
-];
+const mediaImages = [media3, media4, media5, media6, media9, media8];
 
 const MediaPage = () => {
   return (
     <>
+      <Helmet>
+        <title>Our Gallery | Sushila Hospital | Best hospital in Delhi NCR</title>
+        <meta
+          name="description"
+          content="Discover the visual journey of Sushila Hospital through our gallery. Explore photos from medical events, healthcare milestones, and daily activities showcasing our commitment to excellence."
+        />
+        <meta name="keywords" content="Sushila Hospital gallery, hospital events, healthcare moments, Sushila Hospital photos" />
+        <meta name="author" content="Sushila Hospital" />
+        <link rel="canonical" href="https://www.sushilahospital.com/gallery" />
+        <meta property="og:title" content="Our Gallery | Sushila Hospital" />
+        <meta
+          property="og:description"
+          content="See the latest images from Sushila Hospital showcasing our medical excellence, events, and milestones. Witness how we deliver care beyond expectations."
+        />
+        <meta property="og:image" content={media3} />
+        <meta property="og:url" content="https://www.sushilahospital.com/gallery" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
+
       <div className="min-h-screen bg-[#F9FBFF] px-4 md:px-20 pt-32 pb-16">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-black mb-2">
           OUR GALLERY
@@ -45,12 +59,10 @@ const MediaPage = () => {
           ))}
         </div>
       </div>
-      
+
       <Footer />
     </>
   );
 };
 
 export default MediaPage;
-
-

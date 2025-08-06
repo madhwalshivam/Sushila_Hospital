@@ -1,5 +1,6 @@
 import React from "react";
-import image1 from "../Assets/lab.jpg";       
+import { Helmet } from "react-helmet-async";
+import image1 from "../Assets/lab.jpg";
 import image2 from "../Assets/lab1.jpg";
 import image3 from "../Assets/lab2.jpg";
 import image4 from "../Assets/lab3.jpg";
@@ -9,43 +10,54 @@ import Footer from "../Components/Footer";
 
 const facilities = [
   {
-  title: "Intensive Care Unit",
-  img: image1,
-  desc: "Sushila Hospital's Intensive Care Unit (ICU) is equipped with advanced life support systems and 24x7 monitoring to provide critical care to patients with life-threatening conditions."
-},
-{
-  title: "In-House Radiology Lab",
-  img: image2,
-  desc: "Our in-house radiology lab offers immediate access to diagnostic imaging such as X-rays, ultrasounds, CT scans, and MRIs, enabling quick and accurate diagnosis within the hospital premises."
-},
- {
-  title: "Deluxe Rooms",
-  img: image3,
-  desc: "Our Deluxe Rooms offer enhanced comfort with spacious layouts, electronic beds, personal refrigerators, and attached hygienic bathrooms—ensuring a private and peaceful recovery environment."
-},
- {
-  title: "60 Beds Hospital",
-  img: image4,
-  desc: "Sushila Hospital has a capacity of 60 beds, including general wards and deluxe rooms. We provide comfortable, hygienic, and well-equipped spaces tailored to meet the needs and budget of every patient."
-},
- {
-  title: "Nursery (New Born)",
-  img: image5,
-  desc: "Our specialized newborn nursery is equipped with advanced neonatal care facilities, ensuring a safe, warm, and monitored environment for premature and newborn babies."
-},
- {
-  title: "Dialysis",
-  img: image6,
-  desc: "Sushila Hospital offers advanced dialysis care with modern equipment and expert staff, ensuring safe and effective treatment for patients with kidney-related conditions."
-}
-
+    title: "Intensive Care Unit",
+    img: image1,
+    desc: "Looking for an advanced ICU in Delhi, Ghaziabad, Noida, or Gurgaon? Sushila Hospital’s Intensive Care Unit provides 24x7 critical care with modern life support systems, ensuring top-tier emergency treatment across NCR."
+  },
+  {
+    title: "In-House Radiology Lab",
+    img: image2,
+    desc: "Get quick access to X-rays, ultrasounds, CT scans, and MRIs at our in-house radiology lab. Serving patients from Delhi, Noida, Ghaziabad, and Gurgaon, our lab enables faster diagnosis without leaving the hospital."
+  },
+  {
+    title: "Deluxe Rooms",
+    img: image3,
+    desc: "Searching for hospitals with deluxe rooms in Delhi NCR? Sushila Hospital offers luxury recovery rooms in Ghaziabad, Noida, Gurgaon, and Delhi—equipped with electronic beds, hygienic bathrooms, and peaceful privacy."
+  },
+  {
+    title: "60 Beds Hospital",
+    img: image4,
+    desc: "Sushila Hospital is a 60-bed multispecialty hospital conveniently located to serve Delhi, Ghaziabad, Noida, and Gurgaon. From general wards to deluxe rooms, we offer comfortable and hygienic recovery spaces."
+  },
+  {
+    title: "Nursery (New Born)",
+    img: image5,
+    desc: "Need neonatal care in Delhi, Ghaziabad, Noida, or Gurgaon? Our hospital nursery is fully equipped for newborns and premature babies, ensuring specialized and monitored care in a warm environment."
+  },
+  {
+    title: "Dialysis",
+    img: image6,
+    desc: "Sushila Hospital provides safe, reliable dialysis treatment near Delhi, Ghaziabad, Noida, and Gurgaon. With expert nephrologists and state-of-the-art machines, we ensure effective kidney care you can trust."
+  }
 ];
 
 function FacilitiesPage() {
   return (
     <div>
+      <Helmet>
+        <title>Facilities & Technology | Sushila Hospital - Best Facilities & Technology in Delhi NCR </title>
+        <meta
+          name="description"
+          content="Explore the advanced facilities at Sushila Hospital including ICU, radiology lab, dialysis, deluxe rooms, and neonatal care. Serving Delhi, Noida, Ghaziabad, and Gurgaon."
+        />
+        <meta
+          name="keywords"
+          content="hospital facilities in Delhi, ICU in Ghaziabad, dialysis Noida, deluxe rooms hospital, radiology services, neonatal care Delhi NCR"
+        />
+        <link rel="canonical" href="https://www.sushilahospital.com/facilities" />
+      </Helmet>
+
       <div className="pt-32 px-4 md:px-20 pb-20 bg-[#F9FBFF] min-h-screen">
-        {/* Section Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1E1E1E] mb-2">
           Facilities & Technology at Sushila Hospital
         </h2>
@@ -54,7 +66,6 @@ function FacilitiesPage() {
           Sushila Hospital offers world-class infrastructure, specialized departments, and round-the-clock support services to ensure comprehensive healthcare for all.
         </p>
 
-        {/* Facilities Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {facilities.map((item, index) => (
             <div

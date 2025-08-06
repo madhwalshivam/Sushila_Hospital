@@ -26,10 +26,7 @@ function BookAppointment() {
   <span>Why Choose Sushila Hospital</span>
 </h3>
 <p className="ba-description">
-  At Sushila Hospital, your health comes first. We bring together a team of
-  experienced doctors, modern medical facilities, and compassionate care to
-  ensure you receive the best treatment possible. Whether it's emergency support
-  or routine care, we are committed to your well-being at every step.
+At Sushila Hospital, your health is our top priority. Recognized as the No. 1 hospital in Delhi, we combine expert doctors, advanced medical facilities, and compassionate care to deliver the best treatment. From emergency services to routine checkups, we are committed to being the best hospital in Delhi for your complete well-being.
 </p>
 
 

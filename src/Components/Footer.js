@@ -14,7 +14,7 @@ const Footer = () => {
             About Sushila Hospital
           </h4>
           <p className="text-gray-400 mb-6">
-            Sushila Hospital is a multi-specialty & trauma care center committed to delivering affordable, high-quality healthcare services with advanced technology and a human touch. Trusted since our inception, we continue to care with compassion.
+           Sushila Hospital is a multi-specialty and trauma care center, trusted since its inception for delivering affordable, high-quality healthcare with compassion. Equipped with advanced medical technology and expert doctors, we are committed to providing personalized treatment with a human touch. Recognized as one of the best hospital in Delhi, we strive to ensure every patient receives the care they deserve.
           </p>
           <Link
             to="/about"
@@ -143,7 +143,7 @@ const Footer = () => {
         <p>© 2025 Sushila Hospital. All Rights Reserved.</p>
         <p>
           Designed by{" "}
-          <Link to="/advertising-india" className="text-blue-400 hover:underline">
+          <Link to="https://www.websiteseotool.in/" className="text-blue-400 hover:underline">
             Advertising India
           </Link>
         </p>
