@@ -16,7 +16,7 @@ const doctors = [
   {
      img: profile2,
     name: "Dr. J. Kumar, MD",
-    description: "Dr. J Kumar is a highly respected pediatrician at Sushila Hospital, delivering exceptional care for infants, children, and adolescents. With years of experience and a passion for children's health, he is recognized as one of the best pediatricians in Delhi NCR, trusted by families for his gentle approach and medical expertise.Dr. Kumar specializes in newborn care, childhood illnesses, immunizations, and comprehensive pediatric treatments. His warm, child-friendly approach ensures that every child receives personalized attention in a safe and comforting environment. For parents searching for a child specialist near me, Dr. J Kumar at Sushila Hospital offers the highest standard of pediatric care."
+    description: "Dr. J. Kumar is a highly experienced Pediatrician and Neonatologist with over 20 years of overall clinical expertise. He is currently practicing at Sushila Multi-Speciality Hospital and is also associated with several nearby hospitals. After completing his MBBS and MD from reputed universities, Dr. Kumar has dedicated his career to the specialized care of newborns, infants, children, and adolescents, earning a reputation for his excellence in pediatric and neonatal health care."
   },
    {
      img: profile3,
