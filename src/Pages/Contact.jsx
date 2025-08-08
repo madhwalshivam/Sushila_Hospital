@@ -122,7 +122,7 @@ const Contact = () => {
             <h3 className="font-semibold text-gray-700 mb-2">RECEIVE RECORDS</h3>
             <div className="mb-2">
               <p className="text-sm">
-                Call Us: <span className="font-semibold">9990785220</span>
+                Call Us: <span className="font-semibold">9211704745</span>
               </p>
               <p className="text-sm">
                 Email:{" "}

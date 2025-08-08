@@ -10,186 +10,156 @@ import Footer from "./Footer";
 const doctors = [
   {
     img: profile1,
-    name: "Dr. Anupam Singh, MD",
-    description: "A capable and caring chest specialist is essential for maintaining strong respiratory health. Dr. Anupam Kumar Singh, one of the best chest doctors in Delhi NCR, offers expert care at Sushila Hospital, a trusted name in multi-specialty and trauma care.With years of clinical experience and a patient-first approach, Dr. Singh is known for his dedication to treating lung and chest conditions with precision and compassion. From managing chronic respiratory issues to addressing sudden chest illnesses and providing preventive care, Dr. Anupam Kumar Singh is a trusted chest doctor near me for patients seeking quality care in Delhi NCR."
+    name: "Dr. Anupam Singh, MD. Medicine",
+    description:
+      "A capable and caring chest specialist is essential for maintaining strong respiratory health. Dr. Anupam Kumar Singh, one of the best chest doctors in Delhi NCR, offers expert care at Sushila Hospital, a trusted name in multi-specialty and trauma care. With years of clinical experience and a patient-first approach, Dr. Singh is known for his dedication to treating lung and chest conditions with precision and compassion. From managing chronic respiratory issues to addressing sudden chest illnesses and providing preventive care, Dr. Anupam Kumar Singh is a trusted chest doctor near me for patients seeking quality care in Delhi NCR."
   },
   {
-     img: profile2,
-    name: "Dr. J. Kumar, MD",
-    description: "Dr. J. Kumar is a highly experienced Pediatrician and Neonatologist with over 20 years of overall clinical expertise. He is currently practicing at Sushila Multi-Speciality Hospital and is also associated with several nearby hospitals. After completing his MBBS and MD from reputed universities, Dr. Kumar has dedicated his career to the specialized care of newborns, infants, children, and adolescents, earning a reputation for his excellence in pediatric and neonatal health care."
+    img: profile2,
+    name: "Dr. J. Kumar, MD. Pediatrics",
+    description:
+      "Dr. J. Kumar is a highly experienced Pediatrician and Neonatologist with over 20 years of overall clinical expertise. He is currently practicing at Sushila Multi-Speciality Hospital and is also associated with several nearby hospitals. After completing his MBBS and MD from reputed universities, Dr. Kumar has dedicated his career to the specialized care of newborns, infants, children, and adolescents, earning a reputation for his excellence in pediatric and neonatal health care."
   },
-   {
-     img: profile3,
-    name: "Dr. Komal Goel, MD",
-    description: "Few professionals in critical care match the expertise and dedication of Dr. Komal Goel, a highly respected Intensive Care Specialist at Sushila Hospital, Delhi NCR. With over a decade of experience in managing critically ill patients, she is recognized as one of the best critical care doctors in Delhi NCR.Dr. Goel is known for her clinical excellence in handling complex medical emergencies and leading multidisciplinary ICU teams with precision and care. Her patient-focused approach and deep understanding of intensive care medicine make her a top choice for those searching for an ICU specialist near me. At Sushila Hospital, she ensures critically ill patients receive timely, compassionate, and advanced medical support."
+  {
+    img: profile3,
+    name: "Dr. Komal Goel, MD. Critical Care",
+    description:
+      "Few professionals in critical care match the expertise and dedication of Dr. Komal Goel, a highly respected Intensive Care Specialist at Sushila Hospital, Delhi NCR. With over a decade of experience in managing critically ill patients, she is recognized as one of the best critical care doctors in Delhi NCR. Dr. Goel is known for her clinical excellence in handling complex medical emergencies and leading multidisciplinary ICU teams with precision and care."
   },
-   {
-   img: profile4,
-    name: "Dr. Siddharth Anand, MD",
-    description: "Dr. Siddharth Anand is a highly experienced and compassionate pulmonologist at Sushila Hospital, a trusted multi-specialty and trauma care center in Delhi NCR. He is widely recognized for his expertise in diagnosing and treating a wide range of respiratory conditions, including asthma, COPD, lung infections, and other pulmonary diseases. With years of clinical experience and a patient-centric approach, Dr. Anand is considered one of the best pulmonologists in Delhi NCR. For those searching for a pulmonologist near me, Sushila Hospital offers advanced respiratory care with compassion and cutting-edge technology."
+  {
+    img: profile4,
+    name: "Dr. Siddharth Anand, MD. Pulmonary Medicine",
+    description:
+      "Dr. Siddharth Anand is a highly experienced and compassionate pulmonologist at Sushila Hospital, a trusted multi-specialty and trauma care center in Delhi NCR. He is widely recognized for his expertise in diagnosing and treating a wide range of respiratory conditions, including asthma, COPD, lung infections, and other pulmonary diseases."
   },
   {
     img: profile5,
-    name: "Dr. Aman Mathur, MD",
-    description: "Dr. Aman Mathur is a highly accomplished and respected Internist currently practicing at Sushila Hospital, one of the most trusted and advanced healthcare institutions in Delhi NCR. With over 15 years of extensive clinical experience, Dr. Mathur has built a reputation as one of the best Internal Medicine specialists in Delhi NCR. His deep commitment to patient care, accurate diagnosis, and long-term disease management has earned him both professional recognition and the trust of countless patients.Specializing in the comprehensive management of chronic illnesses such as diabetes, hypertension, cardiovascular disorders, thyroid dysfunction, infectious diseases, and autoimmune conditions, Dr. Mathur is known for his evidence-based and individualized approach to treatment. He stays at the forefront of advancements in internal medicine by continuously updating his knowledge through national and international medical forums."
-
+    name: "Dr. Aman Mathur, MD. Medicine",
+    description:
+      "Dr. Aman Mathur is a highly accomplished and respected Internist currently practicing at Sushila Hospital, one of the most trusted and advanced healthcare institutions in Delhi NCR. With over 15 years of extensive clinical experience, Dr. Mathur has built a reputation as one of the best Internal Medicine specialists in Delhi NCR."
   },
   {
     img: profile6,
-    name: "Dr. Neeshu Singh, MD",
+    name: "Dr. Neeshu Singh, MD. Medicine",
     description: "Focuses on lifestyle-related diseases and evidence-based internal medicine."
   },
   {
-    img: profile5,
-    name: "Dr. Vinesh Kumar",
-    description: "Experienced general practitioner with a holistic approach to care."
-  },
-  {
-    img: profile5,
-    name: "Dr. Anand Kumar, MD",
-    description: "Internal medicine specialist with focus on diabetes and hypertension."
-  },
-  {
-    img: profile5,
-    name: "Dr. Vishrut Singh, MD",
-    description: "Physician with interest in cardiac care and infectious disease."
-  },
-  {
     img: profile6,
-    name: "Dr. Shubhra Jaiswal, MD",
+    name: "Dr. Shubhra Jaiswal, MD. Obstetrics & Gynecology",
     description: "Dedicated to women's health and autoimmune disease treatment."
   },
   {
     img: profile6,
-    name: "Dr. Shweta, DGO",
+    name: "Dr. Shweta, DGO. Obstetrics & Gynecology",
     description: "Obstetrician and gynecologist with expertise in prenatal and reproductive care."
   },
   {
     img: profile5,
-    name: "Dr. D.D. Verma, MS",
-    description: "Renowned surgeon specializing in general and laparoscopic procedures."
+    name: "Dr. Sandeep, MD. Anesthesiology",
+    description: "Expert anesthesiologist with extensive experience in surgical and pain management."
   },
   {
     img: profile5,
-    name: "Dr. Sandeep, MD",
-    description: "Physician known for patient-centered care and diagnostics."
-  },
-  {
-    img: profile5,
-    name: "Dr. Milind Gautam, MS",
+    name: "Dr. Milind Gautam, MS. General & Laparoscopic Surgery",
     description: "Surgeon focused on minimally invasive surgical techniques."
   },
   {
     img: profile5,
-    name: "Dr. Abhay Singhal, MS",
-    description: "General surgeon with special interest in trauma and critical care."
+    name: "Dr. B.K. Jain, MS. Orthopedic Surgery",
+    description: "Veteran orthopedic surgeon with decades of experience in operative care."
   },
   {
     img: profile5,
-    name: "Dr. Apoorv Goel, MS",
-    description: "Experienced in gastrointestinal and hepatobiliary surgeries."
-  },
-  {
-    img: profile5,
-    name: "Dr. B.K Jain, MS",
-    description: "Veteran surgeon with decades of experience in operative care."
-  },
-  {
-    img: profile5,
-    name: "Dr. Uday Pratap Singh, MS",
+    name: "Dr. Uday Pratap Singh, D. Ortho",
     description: "Specialist in urology and endoscopic surgical procedures."
   },
   {
     img: profile6,
-    name: "Dr. Shruti Patel, MS, MCH",
+    name: "Dr. Shruti Patel, MS, MCH. Plastic & Cosmetic Surgery",
     description: "Super-specialist in surgical oncology with focus on women’s cancers."
   },
   {
     img: profile5,
-    name: "Dr. Sanjay Mishra, MS, MCH",
-    description: "Highly experienced neurosurgeon and spine surgery expert."
-  },
-  {
-    img: profile6,
-    name: "Dr. P. Kasarwani, MS, MCH",
-    description: "Cardiothoracic surgeon known for precision and innovation."
-  },
-  {
-    img: profile5,
-    name: "Dr. Ritesh, MS, MCH",
+    name: "Dr. Ritesh Gupta, MS, MCH. Urology",
     description: "Plastic and reconstructive surgery expert with aesthetic specialization."
   },
   {
     img: profile5,
-    name: "Dr. Anshul Garg, MS",
-    description: "Surgeon with specialization in hernia, thyroid, and general procedures."
+    name: "Dr. Anshul Garg, MS. ENT",
+    description: "ENT surgeon with specialization in hernia, thyroid, and general procedures."
   },
   {
     img: profile5,
-    name: "Dr. Lalit Varma, MS",
-    description: "General and vascular surgeon focused on diabetic limb care."
-  },
-  {
-    img: profile5,
-    name: "Dr. Rakesh Kumar, MD, DM",
+    name: "Dr. Rakesh Kumar, MD, DM. Neurology",
     description: "Super-specialist in neurology with extensive research in epilepsy and stroke."
   },
   {
     img: profile5,
-    name: "Dr. Amit Malik, MS, MCH",
-    description: "Orthopedic surgeon with focus on joint replacement and trauma care."
-  },
-  {
-    img: profile5,
-    name: "Dr. Gajendra Singh, MS, MCH",
-    description: "Pediatric surgeon with a compassionate approach to child surgical care."
-  },
-  {
-    img: profile5,
-    name: "Dr. Dhaval, MS, MCH",
+    name: "Dr. Dhaval, MS, DNB. Neurosurgery",
     description: "Plastic and maxillofacial surgery expert with cosmetic specialization."
   },
   {
     img: profile5,
-    name: "Dr. Hemendra Jha, MS",
-    description: "Skilled in abdominal surgeries and laparoscopic procedures."
-  },
-  {
-    img: profile6,
-    name: "Dr. Rashi Agrawal, MD, DM",
-    description: "Endocrinologist specializing in thyroid, diabetes, and hormonal disorders."
+    name: "Dr. Hemendra Jha, MS. Ophthalmology",
+    description: "Specialist in advanced eye surgeries and treatments."
   },
   {
     img: profile5,
-    name: "Dr. Jalaj Bakashi, MS, MCH",
-    description: "Urologist known for advanced kidney and bladder surgery."
+    name: "Dr. Nitin Manglik, MD, DM. Gastroenterology",
+    description: "Senior gastroenterologist with expertise in digestive system disorders."
   },
   {
     img: profile5,
-    name: "Dr. Nitin Manglik, MD, DM",
-    description: "Senior cardiologist with experience in interventional and non-invasive cardiology."
-  },
-  {
-    img: profile5,
-    name: "Dr. Sharib, MDS",
+    name: "Dr. Sharib, MDS. Prosthodontics",
     description: "Dental surgeon with expertise in prosthodontics and smile design."
   },
   {
     img: profile5,
-    name: "Dr. Faizan Khan, MPT",
+    name: "Dr. Faizan Khan, BPT, MPT. Physiotherapy",
     description: "Physiotherapist focusing on rehabilitation, ortho, and sports injuries."
   },
   {
     img: profile5,
-    name: "Dr. Navneet Dev, MD",
-    description: "Specialist in internal medicine with focus on diagnostics and primary care."
+    name: "Dr. Navneet Dev, MD. Dermatology",
+    description: "Dermatologist specializing in skin care, cosmetology, and dermatological treatments."
   },
   {
     img: profile5,
-    name: "Dr. Ankul Gupta, MD, DM",
-    description: "Oncologist dedicated to personalized cancer treatment and research."
+    name: "Dr. Ankul Gupta, MD, DM. Cardiology",
+    description: "Cardiologist dedicated to personalized heart care and prevention."
+  },
+  {
+    img: profile5,
+    name: "Dr. Adnan Khan, MD. Oncology",
+    description: "Oncologist specializing in cancer diagnosis, treatment, and research."
+  },
+  {
+    img: profile5,
+    name: "Dr. Kamal Kant, MCH. Nephrology, MD.",
+    description: "Specialist in kidney diseases and advanced renal care."
+  },
+  {
+    img: profile5,
+    name: "Dr. Saleem Ahmed, MBA. Hospital Management",
+    description: "Director of hospital operations with expertise in healthcare administration."
+  },
+  {
+    img: profile5,
+    name: "Dr. Chirag Jain, MS, DNB. Oncology Surgery",
+    description: "Specialist in complex cancer surgeries with advanced surgical skills."
+  },
+  {
+    img: profile6,
+    name: "Dr. Priyanka Singh, MS. ENT",
+    description: "Experienced ENT surgeon specializing in ear, nose, and throat care."
+  },
+  {
+    img: profile5,
+    name: "Dr. Ashwani Mishra, MBBS, DNB. Pediatric Surgery",
+    description: "Pediatric surgeon with expertise in neonatal and child surgical care."
   }
 ];
+
 
 
 
